@@ -4,7 +4,7 @@ grant select on sys.user$ to dba;
 
 CREATE TABLESPACE QA DATAFILE 'qa_02.dbf' SIZE 20M AUTOEXTEND ON;
 
-Create users for tdriver tests and provide required privileges-
+/*Create users for tdriver tests and provide required privileges*/
 
 drop user demouc_template cascade;
 grant dba to demouc_template identified by progress;
