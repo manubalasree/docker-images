@@ -74,7 +74,7 @@ ARG DB_EDITION
 
 # Install unzip for unzip operation
 RUN yum -y install unzip
-RUN yum -y install vim
+RUN yum -y install vi
 
 # Copy DB install file
 COPY --chown=oracle:dba $INSTALL_FILE_1 $INSTALL_RSP $INSTALL_DB_BINARIES_FILE $INSTALL_DIR/
