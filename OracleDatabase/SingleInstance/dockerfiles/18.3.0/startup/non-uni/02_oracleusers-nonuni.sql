@@ -1,9 +1,7 @@
 grant select on sys.user$ to dba;
 
 /*Create QA tablespace*/
-DROP TABLESPACE QA INCLUDING CONTENTS;
 CREATE TABLESPACE QA DATAFILE 'qa_01.dbf' SIZE 20M AUTOEXTEND ON;
-GRANT UNLIMITED TABLESPACE TO QA;
 
 grant dba to sports_template identified by progress ;
 GRANT UNLIMITED TABLESPACE to sports_template;
